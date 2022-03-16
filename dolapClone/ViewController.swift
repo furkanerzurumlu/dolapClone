@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UrunlerCollectionView.delegate = self
+        UrunlerCollectionView.dataSource = self
+        
         setIcon()
         setupButton(button: sizeButton)
         setupButton(button: brandsButton)
@@ -27,7 +30,7 @@ class ViewController: UIViewController {
         upView.layer.borderWidth = 0.3
         upView.layer.borderColor = UIColor.lightGray.cgColor
         
-        let u1 = Urunler(Urun_ID: 1, Urun_Name: "Armani Exchange", Urun_ImageName: "Tshirt", Urun_Price: 54)
+        let u1 = Urunler(Urun_ID: 1, Urun_Name: "Armani Exchange", Urun_ImageName: "Tshirt", Urun_Price: 250)
         let u2 = Urunler(Urun_ID: 2, Urun_Name: "Emporio Armani", Urun_ImageName: "Saat", Urun_Price: 1499)
         let u3 = Urunler(Urun_ID: 3, Urun_Name: "Hotiç", Urun_ImageName: "Ayakkabı", Urun_Price: 200)
         let u4 = Urunler(Urun_ID: 4, Urun_Name: "Emporio Armani", Urun_ImageName: "Saat2", Urun_Price: 1500)
@@ -36,13 +39,13 @@ class ViewController: UIViewController {
         UrunlerList.append(u1)
         UrunlerList.append(u2)
         UrunlerList.append(u3)
-        UrunlerList.append(u4)
         UrunlerList.append(u5)
+        UrunlerList.append(u4)
         
         let tasarim = UICollectionViewFlowLayout()
         let genislik = UrunlerCollectionView.frame.size.width
-        let hucreGenislik = genislik/2
-        tasarim.itemSize = CGSize(width: hucreGenislik, height: hucreGenislik*1.7)
+        let hucreGenislik = (genislik-30)/2
+        tasarim.itemSize = CGSize(width: hucreGenislik, height: hucreGenislik*2)
         UrunlerCollectionView!.collectionViewLayout = tasarim
     }
     func setIcon(){
@@ -62,7 +65,9 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource, HucreProtocol{
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return UrunlerList.count
     }
@@ -71,6 +76,29 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "urunHucre", for: indexPath) as! UrunlerCollectionViewCell
         
+        cell.urunlerImageView.image = UIImage(named: urun.Urun_ImageName!)
+        cell.urunlerName.text = urun.Urun_Name
+        cell.urunlerPrice.text = "\(urun.Urun_Price!) TL"
+        
+        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.layer.borderWidth = 0.3
+        
         return cell
     }
+    
+    func detay(indexPath: IndexPath) {
+        let _ = UrunlerList[indexPath.row]
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let urun = UrunlerList[indexPath.row]
+        performSegue(withIdentifier: "toDetay", sender: urun)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay"{
+            let urun = sender as? Urunler
+            let gidilecekVC = segue.destination as! DetayVC
+            gidilecekVC.urun = urun
+        }
+    }
 }
+

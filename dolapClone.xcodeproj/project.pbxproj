@@ -15,6 +15,7 @@
 		DC637FF027DE234C00CD9E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC637FEE27DE234C00CD9E23 /* LaunchScreen.storyboard */; };
 		DC8CE4EB27E06A8A008AECF7 /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CE4EA27E06A8A008AECF7 /* Urunler.swift */; };
 		DC8CE4ED27E073D1008AECF7 /* UrunlerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CE4EC27E073D1008AECF7 /* UrunlerCollectionViewCell.swift */; };
+		DC8CE4EF27E1CC43008AECF7 /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8CE4EE27E1CC43008AECF7 /* DetayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DC637FF127DE234C00CD9E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC8CE4EA27E06A8A008AECF7 /* Urunler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urunler.swift; sourceTree = "<group>"; };
 		DC8CE4EC27E073D1008AECF7 /* UrunlerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrunlerCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC8CE4EE27E1CC43008AECF7 /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				DC637FE527DE234B00CD9E23 /* SceneDelegate.swift */,
 				DC637FE727DE234B00CD9E23 /* ViewController.swift */,
 				DC637FE927DE234B00CD9E23 /* Main.storyboard */,
+				DC8CE4EE27E1CC43008AECF7 /* DetayVC.swift */,
 				DC8CE4EC27E073D1008AECF7 /* UrunlerCollectionViewCell.swift */,
 				DC8CE4EA27E06A8A008AECF7 /* Urunler.swift */,
 				DC637FEC27DE234C00CD9E23 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8CE4EF27E1CC43008AECF7 /* DetayVC.swift in Sources */,
 				DC637FE827DE234B00CD9E23 /* ViewController.swift in Sources */,
 				DC8CE4EB27E06A8A008AECF7 /* Urunler.swift in Sources */,
 				DC637FE427DE234B00CD9E23 /* AppDelegate.swift in Sources */,

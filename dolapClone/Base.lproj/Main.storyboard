@@ -102,28 +102,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="django" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-PM-NcS">
-                                                    <rect key="frame" x="20" y="10" width="160" height="275"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="9FW-PM-NcS">
+                                                    <rect key="frame" x="20" y="5" width="160" height="300"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="275" id="PqB-gm-nWI"/>
+                                                        <constraint firstAttribute="height" constant="300" id="PqB-gm-nWI"/>
                                                         <constraint firstAttribute="width" constant="160" id="Tz6-sk-9Dp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samsung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCo-2b-42t">
-                                                    <rect key="frame" x="14" y="281" width="71.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armani Exchange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCo-2b-42t">
+                                                    <rect key="frame" x="14" y="281" width="132.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="550 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsy-gr-tZi">
-                                                    <rect key="frame" x="14" y="316" width="71.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsy-gr-tZi">
+                                                    <rect key="frame" x="14" y="316" width="132.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9FW-PM-NcS" firstAttribute="top" secondItem="9Xj-bW-VNf" secondAttribute="top" constant="10" id="2Gx-dv-z7T"/>
+                                                <constraint firstItem="9FW-PM-NcS" firstAttribute="top" secondItem="9Xj-bW-VNf" secondAttribute="top" constant="5" id="2Gx-dv-z7T"/>
                                                 <constraint firstItem="9FW-PM-NcS" firstAttribute="centerX" secondItem="9Xj-bW-VNf" secondAttribute="centerX" id="9Hr-L6-XbR"/>
                                                 <constraint firstItem="Xsy-gr-tZi" firstAttribute="centerX" secondItem="JCo-2b-42t" secondAttribute="centerX" id="The-QF-Gti"/>
                                                 <constraint firstItem="Xsy-gr-tZi" firstAttribute="top" secondItem="JCo-2b-42t" secondAttribute="bottom" constant="14.5" id="bSc-QC-6Gu"/>
@@ -172,11 +172,55 @@
                         <outlet property="cargoButton" destination="nu5-Zv-LNU" id="rHe-WC-2JZ"/>
                         <outlet property="sizeButton" destination="O1c-fW-pqx" id="ofa-AA-dWy"/>
                         <outlet property="upView" destination="hnr-R7-qqO" id="Wuc-ts-dp7"/>
+                        <segue destination="PwL-qz-ufW" kind="show" identifier="toDetay" id="Sf3-KO-kDT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1823.1884057971015" y="93.75"/>
+        </scene>
+        <!--DetayVC-->
+        <scene sceneID="5Mn-Cd-U3e">
+            <objects>
+                <viewController id="PwL-qz-ufW" customClass="DetayVC" customModule="dolapClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ShF-wT-Hsn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Armani Exchange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkX-x5-FsH">
+                                <rect key="frame" x="106" y="637" width="181" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="250 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-ml-y5g">
+                                <rect key="frame" x="168" y="707" width="79.5" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="ZzE-6X-y7I">
+                                <rect key="frame" x="-69" y="132" width="552" height="332"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O5j-eW-Zz9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZzE-6X-y7I" firstAttribute="centerX" secondItem="ShF-wT-Hsn" secondAttribute="centerX" id="RWE-D1-IKQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F8Y-U9-B5T"/>
+                    <connections>
+                        <outlet property="detayImageView" destination="ZzE-6X-y7I" id="pgc-8H-kgf"/>
+                        <outlet property="detayNameLabel" destination="UkX-x5-FsH" id="iwR-0w-LdY"/>
+                        <outlet property="detayPriceLabel" destination="YHQ-ml-y5g" id="VkZ-yU-6TF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAB-bS-Dnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2608.6956521739135" y="93.75"/>
         </scene>
         <!--Item-->
         <scene sceneID="Gmd-Me-Un7">
@@ -218,12 +262,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Tshirt" width="552" height="776"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="comb" catalog="system" width="128" height="119"/>
         <image name="cube.box" catalog="system" width="128" height="124"/>
-        <image name="django" width="200" height="300"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <image name="tag" catalog="system" width="128" height="119"/>
         <systemColor name="secondaryLabelColor">
