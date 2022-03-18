@@ -11,6 +11,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Bildirimler-->
+        <scene sceneID="w8l-UL-whu">
+            <objects>
+                <viewController id="NLj-Bu-2Th" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8X-Hp-YMG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gbK-Ef-cx6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bildirimler" image="icons8-bell-24" id="oPh-b2-IMJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gyu-FN-LN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="-645"/>
+        </scene>
+        <!--Sat-->
+        <scene sceneID="sLc-7D-owA">
+            <objects>
+                <viewController id="KfN-V5-DME" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2p1-cp-2a0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uk2-gO-Wfh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sat" image="icons8-add-24(-mdpi)" id="b0I-nr-e0J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFh-Q8-dgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="-646"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -53,33 +85,72 @@
                                     <constraint firstAttribute="height" constant="50" id="bb1-co-P92"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zpU-QP-nYU">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zpU-QP-nYU">
                                 <rect key="frame" x="0.0" y="138" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-fW-pqx">
-                                        <rect key="frame" x="0.0" y="14.5" width="113.5" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Bedenim" image="comb" catalog="system">
-                                            <color key="titleColor" systemColor="secondaryLabelColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-iH-b1r">
-                                        <rect key="frame" x="121.5" y="14.5" width="133.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Markalarım" image="tag" catalog="system">
-                                            <color key="titleColor" systemColor="secondaryLabelColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu5-Zv-LNU">
-                                        <rect key="frame" x="263" y="14.5" width="151" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Ücretsiz Kargo" image="cube.box" catalog="system">
-                                            <color key="titleColor" systemColor="secondaryLabelColor"/>
-                                        </state>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-LS-YmY">
+                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-fW-pqx">
+                                                <rect key="frame" x="5" y="5" width="122.5" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Bedenim" image="comb" catalog="system">
+                                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="O1c-fW-pqx" firstAttribute="leading" secondItem="VS5-LS-YmY" secondAttribute="leading" constant="5" id="8wc-5r-xPv"/>
+                                            <constraint firstItem="O1c-fW-pqx" firstAttribute="top" secondItem="VS5-LS-YmY" secondAttribute="top" constant="5" id="VS0-d3-tOz"/>
+                                            <constraint firstAttribute="bottom" secondItem="O1c-fW-pqx" secondAttribute="bottom" constant="5" id="Y2B-vx-zq5"/>
+                                            <constraint firstAttribute="trailing" secondItem="O1c-fW-pqx" secondAttribute="trailing" constant="5" id="tLM-05-zpF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="20"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwr-ar-iga">
+                                        <rect key="frame" x="140.5" y="0.0" width="133" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-iH-b1r">
+                                                <rect key="frame" x="5" y="5" width="123" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Markalarım" image="tag" catalog="system">
+                                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VGs-iH-b1r" secondAttribute="trailing" constant="5" id="hfZ-U1-o0y"/>
+                                            <constraint firstItem="VGs-iH-b1r" firstAttribute="leading" secondItem="kwr-ar-iga" secondAttribute="leading" constant="5" id="hsQ-pL-Q7s"/>
+                                            <constraint firstAttribute="bottom" secondItem="VGs-iH-b1r" secondAttribute="bottom" constant="5" id="hxd-wN-QOX"/>
+                                            <constraint firstItem="VGs-iH-b1r" firstAttribute="top" secondItem="kwr-ar-iga" secondAttribute="top" constant="5" id="oBM-oh-SOk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-BT-eS6">
+                                        <rect key="frame" x="281.5" y="0.0" width="132.5" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu5-Zv-LNU">
+                                                <rect key="frame" x="3" y="3" width="126.5" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" red="0.24991035340000001" green="0.80792754889999996" blue="0.1869871112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Ücretsiz Kargo" image="cube.box" catalog="system">
+                                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="nu5-Zv-LNU" secondAttribute="bottom" constant="3" id="4X0-Ed-HSZ"/>
+                                            <constraint firstItem="nu5-Zv-LNU" firstAttribute="top" secondItem="TgJ-BT-eS6" secondAttribute="top" constant="3" id="5H3-H4-8mt"/>
+                                            <constraint firstAttribute="trailing" secondItem="nu5-Zv-LNU" secondAttribute="trailing" constant="3" id="VM4-Rd-EMe"/>
+                                            <constraint firstItem="nu5-Zv-LNU" firstAttribute="leading" secondItem="TgJ-BT-eS6" secondAttribute="leading" constant="3" id="zvP-mh-rTj"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LDw-1g-D3b"/>
@@ -88,7 +159,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZE5-nt-7jk">
                                 <rect key="frame" x="0.0" y="188" width="414" height="625"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iyy-u1-Oe8">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iyy-u1-Oe8">
                                     <size key="itemSize" width="200" height="350"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -187,28 +258,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Armani Exchange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkX-x5-FsH">
-                                <rect key="frame" x="106" y="637" width="181" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armani Exchange" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkX-x5-FsH">
+                                <rect key="frame" x="0.0" y="580" width="414" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="250 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-ml-y5g">
-                                <rect key="frame" x="168" y="707" width="79.5" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 TL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-ml-y5g">
+                                <rect key="frame" x="0.0" y="707" width="414" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="ZzE-6X-y7I">
-                                <rect key="frame" x="-69" y="132" width="552" height="332"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="ZzE-6X-y7I">
+                                <rect key="frame" x="82" y="168" width="250" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ayk-oh-n3B"/>
+                                    <constraint firstAttribute="height" constant="330" id="Uuw-c5-cmo"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O5j-eW-Zz9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="O5j-eW-Zz9" firstAttribute="trailing" secondItem="YHQ-ml-y5g" secondAttribute="trailing" id="FDh-Gc-3dU"/>
+                            <constraint firstItem="ZzE-6X-y7I" firstAttribute="top" secondItem="O5j-eW-Zz9" secondAttribute="top" constant="80" id="J8O-pn-pr6"/>
+                            <constraint firstItem="UkX-x5-FsH" firstAttribute="top" secondItem="ZzE-6X-y7I" secondAttribute="bottom" constant="82" id="O2C-pS-I7h"/>
                             <constraint firstItem="ZzE-6X-y7I" firstAttribute="centerX" secondItem="ShF-wT-Hsn" secondAttribute="centerX" id="RWE-D1-IKQ"/>
+                            <constraint firstItem="UkX-x5-FsH" firstAttribute="leading" secondItem="O5j-eW-Zz9" secondAttribute="leading" id="XNA-4Y-uJn"/>
+                            <constraint firstItem="YHQ-ml-y5g" firstAttribute="top" secondItem="UkX-x5-FsH" secondAttribute="bottom" constant="98" id="aZo-8x-z9j"/>
+                            <constraint firstItem="O5j-eW-Zz9" firstAttribute="trailing" secondItem="UkX-x5-FsH" secondAttribute="trailing" id="e5Z-H5-cSp"/>
+                            <constraint firstItem="YHQ-ml-y5g" firstAttribute="leading" secondItem="O5j-eW-Zz9" secondAttribute="leading" id="nvR-ol-YlM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F8Y-U9-B5T"/>
@@ -222,11 +302,11 @@
             </objects>
             <point key="canvasLocation" x="2608.6956521739135" y="93.75"/>
         </scene>
-        <!--Item-->
+        <!--Bana Özel-->
         <scene sceneID="Gmd-Me-Un7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPj-ew-GYL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lQe-u7-C1a"/>
+                    <tabBarItem key="tabBarItem" title="Bana Özel" image="icon.png!s" landscapeImage="icon.png!s" largeContentSizeImage="icon.png!s" selectedImage="icon.png!s" id="lQe-u7-C1a"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7PV-XK-unU">
@@ -242,6 +322,38 @@
             </objects>
             <point key="canvasLocation" x="913.04347826086962" y="93.75"/>
         </scene>
+        <!--Sepet-->
+        <scene sceneID="lw6-dq-GM4">
+            <objects>
+                <viewController id="hEt-KY-Qav" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chQ-gR-OqU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h0C-YD-UaP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sepet" image="icons8-shopping-trolley-24" id="9O8-y3-Cjp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9z-Tc-erE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-848" y="71"/>
+        </scene>
+        <!--Hesabım-->
+        <scene sceneID="ZfX-9w-hsU">
+            <objects>
+                <viewController id="ksa-Tp-eMK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a03-oE-TRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g2b-ha-Ftr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hesabım" image="icons8-customer-24" id="E3i-70-8Ia"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlI-k8-XKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="780"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n12-5Z-cIb">
             <objects>
@@ -254,6 +366,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="fPj-ew-GYL" kind="relationship" relationship="viewControllers" id="76i-Ba-1ZU"/>
+                        <segue destination="NLj-Bu-2Th" kind="relationship" relationship="viewControllers" id="kqv-UO-cT8"/>
+                        <segue destination="KfN-V5-DME" kind="relationship" relationship="viewControllers" id="e96-91-pLo"/>
+                        <segue destination="hEt-KY-Qav" kind="relationship" relationship="viewControllers" id="OEb-LL-ud9"/>
+                        <segue destination="ksa-Tp-eMK" kind="relationship" relationship="viewControllers" id="pk8-lF-NKH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13c-wI-Pao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -268,6 +384,11 @@
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="comb" catalog="system" width="128" height="119"/>
         <image name="cube.box" catalog="system" width="128" height="124"/>
+        <image name="icon.png!s" width="30" height="23"/>
+        <image name="icons8-add-24(-mdpi)" width="24" height="24"/>
+        <image name="icons8-bell-24" width="24" height="24"/>
+        <image name="icons8-customer-24" width="24" height="24"/>
+        <image name="icons8-shopping-trolley-24" width="24" height="24"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <image name="tag" catalog="system" width="128" height="119"/>
         <systemColor name="secondaryLabelColor">

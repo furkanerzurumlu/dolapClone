@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         setIcon()
         setupButton(button: sizeButton)
         setupButton(button: brandsButton)
-        setupButton(button: brandsButton)
+        setupButton(button: cargoButton)
         
         upView.layer.borderWidth = 0.3
         upView.layer.borderColor = UIColor.lightGray.cgColor
@@ -43,8 +43,11 @@ class ViewController: UIViewController {
         UrunlerList.append(u4)
         
         let tasarim = UICollectionViewFlowLayout()
+        tasarim.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        tasarim.minimumLineSpacing = 0
+        tasarim.minimumInteritemSpacing = 0
         let genislik = UrunlerCollectionView.frame.size.width
-        let hucreGenislik = (genislik-30)/2
+        let hucreGenislik : CGFloat = (genislik)/2.0
         tasarim.itemSize = CGSize(width: hucreGenislik, height: hucreGenislik*2)
         UrunlerCollectionView!.collectionViewLayout = tasarim
     }
@@ -57,8 +60,8 @@ class ViewController: UIViewController {
     }
     
     func setupButton(button: UIButton) {
-        button.layer.cornerRadius = 10
-        button.layer.borderWidth = 0.3
+        button.layer.cornerRadius = 20
+        button.layer.borderWidth = 0.5
         button.layer.borderColor = UIColor.lightGray.cgColor
     }
     
